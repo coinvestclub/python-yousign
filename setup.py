@@ -2,18 +2,14 @@ from distutils.core import setup
 
 setup(
     name='python_yousign',
-    version='0.1.0',
+    version='0.1.1',
     author='Nicolas Tobo',
     author_email='nico@coinvestclub.com',
     packages=['yousign'],
-    url='',
-    license='LICENSE',
+    package_dir={'': 'yousign'},
+    url='https://github.com/coinvestclub/python-yousign',
+    download_url='https://github.com/coinvestclub/python-yousign/releases',
+    license='GNU GPL V3',
     description='a python client for Yousign API',
-    long_description=open('README.rst').read(),
-    package_data={},
-    install_requires=[
-        "suds-jurko==0.6",
-        "lxml==3.3.5",
-        "pytz==2014.7"
-    ],
+    long_description=open('README.rst').read()
 )
